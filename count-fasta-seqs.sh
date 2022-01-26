@@ -1,11 +1,8 @@
 #!/bin/sh
-<<<<<<< HEAD
 
 #Shawn just making a comment
 
-=======
 #HI ITS COLLIN
->>>>>>> 4273ac5e4b28a03000a248eaf5a8afc245837b13
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
