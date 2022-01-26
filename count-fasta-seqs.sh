@@ -1,5 +1,7 @@
 #!/bin/sh
 
+#Shawn just making a comment
+
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
