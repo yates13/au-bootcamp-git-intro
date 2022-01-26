@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#HI ITS COLLIN
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
