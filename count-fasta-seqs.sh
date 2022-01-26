@@ -97,3 +97,7 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
+for filepath in "$@"
+do
+    basename "$@"
+done
