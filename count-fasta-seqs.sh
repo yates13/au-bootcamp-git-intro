@@ -3,6 +3,7 @@
 #Shawn just making a comment
 
 #HI ITS COLLIN
+
 # How this script should behave:
 #
 # INPUT:   Paths to one or more fasta sequence files
@@ -99,5 +100,5 @@ echo "$@"
 
 for filepath in "$@"
 do
-    basename "$@"
+    basename "$@" 
 done
