@@ -67,7 +67,7 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
-echo "$@"
+#echo "$@"
 
 # How are you going to work with each file path?
 # HINT: for loop (remember "for do done"?)
@@ -98,7 +98,14 @@ echo "$@"
 #
 # ADD YOUR CODE BELOW:
 
+
 for filepath in "$@"
 do
-    basename "$@" 
+    a=` grep ">" "$@" | wc -l `
+    b=`basename "$@"`
+#    c=$(expr $a + $c)
+    echo $a $b
+    echo $a
 done
+
+
