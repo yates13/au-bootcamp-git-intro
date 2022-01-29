@@ -67,6 +67,7 @@
 # files that were 'given to' this script. The variable "$@" will be very useful
 # for this. Let's take a look at what it gives us:
 
+
 #echo "$@"
 
 # How are you going to work with each file path?
@@ -99,13 +100,24 @@
 # ADD YOUR CODE BELOW:
 
 
+
+
+#set up loop to run through each command you give 
+#count the number of seq givem 
+#get the seq name 
+
+
+
 for filepath in "$@"
 do
-    a=` grep ">" "$@" | wc -l `
-    b=`basename "$@"`
-#    c=$(expr $a + $c)
-    echo $a $b
-    echo $a
+    a=`grep ">" "$1" | wc -l `
+    b=`basename -a  "$1"`
+    c=`basename -a  "$2"`
+    d=`grep ">" "$2" | wc -l`
+    e=$(expr $a + $d) 
+echo $a $b
+echo $d $c
+echo $e    
 done
 
-
+exit
