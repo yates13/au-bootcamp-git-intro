@@ -100,24 +100,23 @@
 # ADD YOUR CODE BELOW:
 
 
-
-
-#set up loop to run through each command you give 
-#count the number of seq givem 
-#get the seq name 
-
-
+#initlizing the loop using filepath as a variable
 
 for filepath in "$@"
 do
-    a=`grep ">" "$1" | wc -l `
-    b=`basename -a  "$1"`
-    c=`basename -a  "$2"`
-    d=`grep ">" "$2" | wc -l`
-    e=$(expr $a + $d) 
+
+#count the amount of sequences per file
+    a=`grep ">" "$filepath" | wc -l `
+#state the file name for each iteration
+    b=`basename -a  "$filepath"`
+
 echo $a $b
-echo $d $c
-echo $e    
+
 done
+
+#total count dor all files given
+    grep ">" "$@" | wc -l 
+
+
 
 exit
