@@ -109,21 +109,12 @@ do
     a=`grep ">" "$filepath" | wc -l `
 #state the file name for each iteration
     b=`basename -a  "$filepath"`
-
 echo $a $b
-
 done
 
 #total count dor all files given
-
 #  grep ">" "$@" | wc -l
-
 #c= `grep ">" "$a" | wc -l`
-
 #c= `grep ">" "$@" | wc -l`
-
 grep ">" "$@" | wc -w
-
-
-
 exit
