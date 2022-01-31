@@ -115,7 +115,14 @@ echo $a $b
 done
 
 #total count dor all files given
-    grep ">" "$@" | wc -l 
+
+#  grep ">" "$@" | wc -l
+
+#c= `grep ">" "$a" | wc -l`
+
+#c= `grep ">" "$@" | wc -l`
+
+grep ">" "$@" | wc -w
 
 
 
